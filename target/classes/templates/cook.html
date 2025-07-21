@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cook with What You Have</title>
+    <link rel="icon" type="image/jpg" th:href="@{/image/img.png}" />
+    <link rel="stylesheet" th:href="@{/css/cook.css}" />
+</head>
+<body>
+    <div class="container">
+        <h2>Find Recipes by Ingredient</h2>
+        <form action="/cook" method="post">
+            <input type="text" name="ingredient" placeholder="e.g. tomato, rice" />
+            <br/><br/>
+            <button type="submit">Search</button>
+        </form>
+        <br/>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
